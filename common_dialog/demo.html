@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <title>弹出框</title>
+  <link rel="stylesheet" href="common_dialog.css">
+</head>
+<body>
+      <div class="alert">
+         aaaa
+     </div>
+     <div class="confirm">
+         bbbb
+     </div>
+</body>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="common_dialog.js"></script>
+<script>
+
+    $('.alert').click(function(){
+        method.alert({
+            content: '成功加入购物车!',
+            blankclose: true,
+        })
+    })
+
+    $('.confirm').click(function(){
+        method.confirm({
+            content: '确定删除吗？',
+            blankclose: true,
+            okCallback:function(){
+                console.log(1);
+            },
+            cancelCallback:function(){
+                console.log(2);
+            }
+        })
+    })
+</script>
+</html>

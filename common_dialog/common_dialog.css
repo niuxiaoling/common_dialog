@@ -1,0 +1,122 @@
+.dialog-content {
+    padding: 2.7em 20px 1.7em;
+    color: #000;
+    /*padding: 0 1.6em 0.8em;*/
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.dialog-ft {
+    width: 100%;
+    position: relative;
+    line-height: 48px;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    padding:  18px 0;
+}
+.dialog-ft .dialog_footer {
+    width:50%;
+    height:30px;
+    line-height: 30px;
+    /*-webkit-box-flex: 1;*/
+    /*-webkit-flex: 1;*/
+    /*flex: 1;*/
+    color: #fff;
+    border-radius:20px;
+    background: linear-gradient(to right,#FF3449,#FF2778);
+    box-shadow: 0 0  3px #FF2778 ;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+}
+.dialog_btn{
+    width:30%;
+    height:30px;
+    line-height: 30px;
+    /*-webkit-box-flex: 1;*/
+    /*-webkit-flex: 1;*/
+    /*flex: 1;*/
+    color: #fff;
+    border-radius:20px;
+    background: linear-gradient(to right,#FF3449,#FF2778);
+    box-shadow: 0 0  3px #FF2778 ;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: relative;
+    text-align: center;
+}
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+.li-opacity {
+    -webkit-animation-name: opacity; /*动画名称*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+.dialog-content {
+    padding: 2.7em 20px 1.7em;
+    color: #000;
+    /*padding: 0 1.6em 0.8em;*/
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.alert{
+    font-size:36px;
+}
+.alert-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5000;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.alert-content {
+    box-sizing: border-box;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
+    display: none;
+}
+.alert-show {
+    display: block;
+}
+.alert-default {
+    background-color: white;
+}
+.confirm-default{
+    background-color: white;
+}
+.dialog_xiaomei_img{
+    width: 156px;
+    height:120px;
+    margin:0 auto;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:-98px;
+}
+.dialog_xiaomei_img img{
+    width: 100%;
+    height:100%;
+}
